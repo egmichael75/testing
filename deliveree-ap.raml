@@ -169,7 +169,11 @@ protocols: [HTTP, HTTPS]
                 {
                   userid:  UIC123
                 }
-          
+        401:
+          body:
+            application/json:
+              example:
+                {msg: server error}
 
           
   
