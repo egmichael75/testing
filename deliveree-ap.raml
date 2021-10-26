@@ -3,9 +3,8 @@ title: Deliveree API
 description: to track and manage cust. ord. deliver asp within this api
 protocols: [HTTP, HTTPS]
 /delivery:
-Luubu (mulusoft), [26.10.21 11:14]
-[In reply to Bessu Tess]
-responses:
+  post:
+     responses:
       201:
         body:
           application/json:
@@ -27,7 +26,7 @@ responses:
               {
                 message: "server error"
               }
-  get:
+ 
     
   /{customerId}:
 
