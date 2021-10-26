@@ -150,8 +150,15 @@ protocols: [HTTP, HTTPS]
         application/json:
           example:
             {msg: account updated}
+
+    responses:
+     401:
+       body:
+        application/json:
+          example:
+            {msg: server error}
     
-    
+
         
 
 
