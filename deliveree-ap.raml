@@ -161,8 +161,11 @@ protocols: [HTTP, HTTPS]
       description: creating a new customer account for delivery
       queryParameters:
         user-name:
-          description: data enterd to ob
-          type: 
+          description: data enterd to obtain customer user-id
+          type: string
+          required: true
+          maxLength: 30
+          minLength: 5
   
 
     
