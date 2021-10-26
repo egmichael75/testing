@@ -127,9 +127,11 @@ protocols: [HTTP, HTTPS]
   put:
     description: update delivery and customer account
     queryParameters:
-      updatedate: datedate-only
-        type:
-        required:
+      updatedate:
+        type: date-only
+        required: false
+      updatetime:
+        type: date
 
 
 
