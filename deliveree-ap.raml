@@ -35,6 +35,31 @@ protocols: [HTTP, HTTPS]
             "custzip" : 12345
             }
           ]
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              {
+                message: "account created successfully"
+              }
+      404:
+        body:
+          application/json:
+            example:
+              {
+                message: "not created"
+              }
+      500:
+        body:
+          application/json:
+            example:
+              {
+                message: "server error"
+              }
+  get:
+  /{customerId}:
+  
 
 
 
