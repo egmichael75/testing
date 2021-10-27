@@ -1,8 +1,8 @@
 #%RAML 1.0 DataType
 
 properties:
-  custname:
-        type: string
+    custname:
+      type: string
         description: name on the address to be delivered
         required: true
        custaddress:
@@ -10,28 +10,28 @@ properties:
         type: string
         required: true
         enum: [home ,work ]
-      custcity:
+    custcity:
         type: string
         required: true
-      custstate:
+    custstate:
         type: string
         required: true
-      custzipcode:
+    custzipcode:
         type: integer
         required: true
-      delivcode:
+    delivcode:
         type: integer
         required: true
-      deliverydate:
+    deliverydate:
         type: date-only
         required: false
-      deliverytime:
+    deliverytime:
         type: datetime
         required: false
-      deliverymanid:
+    deliverymanid:
         description: employee id number
         type: integer
         required: true
-      unitprice:
+    unitprice:
         type: integer
         required: true
