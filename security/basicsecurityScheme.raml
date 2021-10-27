@@ -1,3 +1,18 @@
 #%RAML 1.0 SecurityScheme
 type: Basic Authentication
-description: 
+description: needs username and password
+describedBy:
+  headers:
+    authorization:
+      description: admin needs a valid token value
+      type: string
+  responses:
+    401:
+      description: unautorized user
+    403:
+      description: forbidden access
+  queryParameters:
+    token:
+      type: string
+      required: true
+       
