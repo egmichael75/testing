@@ -1,2 +1,36 @@
 #%RAML 1.0 DataType
 
+properties:
+  
+
+        required: true
+      custaddress:
+        description: the address where the package will be delivered
+        type: string
+        required: true
+        enum: [home ,work ]
+      custcity:
+        type: string
+        required: true
+      custstate:
+        type: string
+        required: true
+      custzipcode:
+        type: integer
+        required: true
+      delivcode:
+        type: integer
+        required: true
+      deliverydate:
+        type: date-only
+        required: false
+      deliverytime:
+        type: datetime
+        required: false
+      deliverymanid:
+        description: employee id number
+        type: integer
+        required: true
+      unitprice:
+        type: integer
+        required: true
