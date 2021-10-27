@@ -29,42 +29,6 @@ protocols: [HTTP, HTTPS]
 
 /{customerId}:
   post:
-    description: create an account for deliver service
-    queryParameters:
-      custname:
-        type: string
-        description: name on the address to be delivered
-        required: true
-      custaddress:
-        description: the address where the package will be delivered
-        type: string
-        required: true
-        enum: [home ,work ]
-      custcity:
-        type: string
-        required: true
-      custstate:
-        type: string
-        required: true
-      custzipcode:
-        type: integer
-        required: true
-      delivcode:
-        type: integer
-        required: true
-      deliverydate:
-        type: date-only
-        required: false
-      deliverytime:
-        type: datetime
-        required: false
-      deliverymanid:
-        description: employee id number
-        type: integer
-        required: true
-      unitprice:
-        type: integer
-        required: true
     body:
       application/json:
         example: !include example/Deleiverexample.raml
