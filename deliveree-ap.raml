@@ -29,14 +29,6 @@ uses:
       application/json:
         example: !include example/custIdexample.raml
 
-    responses:
-      201:
-        body:
-          application/json:
-            example:
-              {
-                meg: account created successfully
-              }
   /{customerid}:
     get:
       body:
@@ -54,10 +46,8 @@ uses:
   get:
     body:
       application/json:
-        example:
-          {
-            "message : "
-          }
+        example: !include example/deleveryManExample.raml
+
       
 
     
