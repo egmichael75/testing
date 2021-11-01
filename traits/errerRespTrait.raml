@@ -15,11 +15,11 @@ responses:
               {
                 message: "not created"
               }
-  401:
+  403:
     body:
       application/json:
         example:
-          {msg: server error}
+          {msg: forbiden}
          500:
           body:
             application/json:
