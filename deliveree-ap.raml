@@ -43,13 +43,15 @@ uses:
         application/json:
           example: !include example/custIdexample.raml
     is:
-      - 
+      - lib.messageResponce
   
 /deliverman:
   get:
     body:
       application/json:
         example: !include example/deleveryManExample.raml
+  is:
+    - lib.messageResponce
 
       
 
