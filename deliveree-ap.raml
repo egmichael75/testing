@@ -92,16 +92,7 @@ uses:
     post:
       description: creating a new customer account for delivery
       queryParameters:
-        user-name:
-          description: data enterd to obtain customer user-id
-          type: string
-          required: true
-          maxLength: 30
-          minLength: 5
-        e-mail:
-          description: customer electronic mail address for account
-          type: string
-          required: true
+
       body:
         application/json:
           example: !include example/getIdexample.raml
