@@ -90,12 +90,10 @@ uses:
             {msg: server error}
   /{cutomerId}:
     post:
-      description: creating a new customer account for delivery
-      queryParameters:
 
       body:
         application/json:
-          example: !include example/getIdexample.
+          example: !include example/custIdexample.raml
 
       responses:
          201:
