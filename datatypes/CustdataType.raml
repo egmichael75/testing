@@ -1,12 +1,13 @@
 #%RAML 1.0 DataType
 properties:
 
-  updatedate:
-    type: date-only
-    required: false
-  updatetime:
-    type: datetime
-    required: false
-  delivermanid:
-    type: integer
+  user-name:
+    description: data enterd to obtain customer user-id
+    type: string
+    required: true
+    maxLength: 30
+    minLength: 5
+  e-mail:
+    description: customer electronic mail address for account
+    type: string
     required: true
