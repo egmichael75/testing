@@ -5,4 +5,6 @@ types:
   delivdata: !include /datatypes/deliverdataType.raml
   customerdata: !include datatypes/CustdataType.raml
   adminputdata: !include datatypes/AdminPutDataType.raml
-  
+securitySchemes:
+  adminsecurity: !include security/oauthsecurityScheme.raml
+  custsecurity: !include security/basicsecurityScheme.raml
