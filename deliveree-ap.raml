@@ -37,26 +37,12 @@ uses:
               {
                 meg: account created successfully
               }
-  get:
-    description: fetch customer account
-    body:
-      application/json:
-        example: !include example/custIdexample.raml
-      201:
-        body:
-          application/json:
-            example:
-              {
-                msg : "successfull"
-              }
-
-
+ 
     get:
       body:
         application/json:
           example: !include example/custIdexample.raml
-
-      responses:
+     responses:
          201:
           body:
             application/json:
